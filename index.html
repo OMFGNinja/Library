@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./assets/library.png">
+            <h1>Online Library</h1>
+        </header>
+        <div class="addButton">
+            <button class="mainButton">Add a book+</button>
+        </div>
+        <main class="main">
+    
+        </main>
+        <form class="form">
+            <h3 style="align-self:center;">Add a new book</h3>
+            <div style="width: 100%; position: relative;">
+                <input style="width: calc(100% - 14px);" type="text" placeholder="Title" class="title input" required>
+                <p class="errorMsg">Book already exists!</p>
+            </div>
+            <input type="text" placeholder="Author" class="author input" required>
+            <input type="number" placeholder="Number of pages" class="pages input" required>
+            <div class="confirmRead">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" class="checkbox">
+            </div>
+            <button type="submit" style="margin: 0 auto; width: 40%;" class="submit">Submit</button>
+        </form>
+        <div class="overlayScreen"></div>
+        <footer id="footer">
+            <p>Copyright © OMFGNinja</p>
+            <a href="https://github.com/OMFGNinja" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
